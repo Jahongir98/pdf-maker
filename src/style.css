@@ -1,0 +1,43 @@
+body {
+    overflow: hidden;
+    margin: 0 !important;
+}
+
+body, #root {
+    width: 100vw;
+    height: 100vh;
+}
+
+iframe {
+    /*width: 50vw;*/
+    flex-grow: 1;
+    width: max-content;
+    height: 100vh;
+}
+
+.editor {
+    width: 70.71vh;
+    min-width: 70.71vh;
+    height: 100vh;
+    background-image: url("./page2compressed.jpg");
+    background-size: auto 100%;
+    /*background-position: ;*/
+    background-repeat: no-repeat;
+}
+
+input, select {
+    font-weight: 600;
+    background-color: #ffffff55;
+    text-align: center;
+    position: absolute;
+    border: 0.1vh solid #f0f;
+    /*border: none;*/
+    padding: 0;
+    font-size: 1.8vh;
+    outline: none;
+    border-radius: 0.4vh;
+}
+
+input:focus-within {
+    /*border: none;*/
+}
