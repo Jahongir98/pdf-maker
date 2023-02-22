@@ -2,13 +2,14 @@ import React, {useEffect, useState} from 'react';
 import {PDFViewer} from '@react-pdf/renderer';
 import MyDocument from "./pdf";
 import Editor from "./Editor";
-import axios from 'axios'
+
+const today = new Date()
 
 const App = () => {
     const [fields, setFields] = useState({
-        year: '',
-        day: '',
-        month: 'yanvar',
+        year: today.getFullYear().toString().slice(2),
+        day: today.getDate().toString(),
+        month: 'fevral',
         orderNumber: '',
         author: "",
         speciality: "",
@@ -26,15 +27,6 @@ const App = () => {
         if (e.key === 'Enter')
             setData(fields)
     }
-    useEffect(() => {
-        axios.post('http://localhost/pdf', fields)
-            .then(res=>{
-                console.log(res)
-            })
-            .catch(e=>{
-                console.log(e)
-            })
-    })
     useEffect(() => {
         window.addEventListener('keyup', keyHandler)
         return () => window.removeEventListener('keyup', keyHandler)
