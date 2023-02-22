@@ -15,7 +15,7 @@ const Editor = ({fields, setFields}) => {
             />
             <select
                 onChange={(e) => setFields({...fields, month: e.target.value})}
-                defaultValue={'mart'}
+                defaultValue={fields.month}
                 style={{top: '22vh', left: '18vh', width: '9vh'}}
             >
                 <option value="yanvar">yanvar</option>
