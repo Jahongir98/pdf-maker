@@ -1,7 +1,7 @@
 import React from 'react';
 import {Document, Font, Image, Page, StyleSheet, Text, View} from '@react-pdf/renderer';
 import page1 from './page1.jpg'
-import page2 from './page2.jpg'
+import page2 from './guvohnoma.png'
 import {useQrEncode} from 'react-qr-hooks';
 
 import font from './Kalam-Regular.ttf'
@@ -57,8 +57,8 @@ const MyDocument = React.memo(({data}) => {
                 <Text style={{...styles.text, top: 204, left: 73, width: 272}}>{lorem1}</Text>
                 <Text style={{...styles.text, top: 227, left: 73, width: 272}}>{lorem2}</Text>
                 <Text style={{...styles.text, top: 248, left: 73, width: 242}}>{lorem3}</Text>
-                <Text style={{...styles.text, top: 289, left: 73, width: 272}}>{lorem4}</Text>
-                <Text style={{...styles.text, top: 320, left: 73, width: 272}}>{lorem5}</Text>
+                <Text style={{...styles.text, top: 276, left: 73, width: 272}}>{lorem4}</Text>
+                <Text style={{...styles.text, top: 319, left: 73, width: 272}}>{lorem5}</Text>
                 <Text style={{...styles.text, top: 346, left: 73, width: 272}}>{lorem6}</Text>
                 <Text style={{...styles.text, top: 490, left: 185, width: 67}}>{listNumber}</Text>
             </View>

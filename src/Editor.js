@@ -59,17 +59,17 @@ const Editor = ({fields, setFields}) => {
             <input
                 onChange={(e) => setFields({...fields, lorem3: e.target.value})}
                 value={fields.lorem3}
-                style={{top: '41.7vh', left: '12vh', width: '41vh'}}
+                style={{top: '41.7vh', left: '12vh', width: '46vh'}}
             />
             <input
-                onChange={(e) => setFields({...fields, lorem4: e.target.value})}
+                    onChange={(e) => setFields({...fields, lorem4: e.target.value})}
                 value={fields.lorem4}
-                style={{top: '48.3vh', left: '12vh', width: '46vh'}}
+                style={{top: '46vh', left: '12vh', width: '41vh'}}
             />
             <input
                 onChange={(e) => setFields({...fields, lorem5: e.target.value})}
                 value={fields.lorem5}
-                style={{top: '53.9vh', left: '12vh', width: '46vh'}}
+                style={{top: '53.5vh', left: '12vh', width: '46vh'}}
             />
             <input
                 onChange={(e) => setFields({...fields, lorem6: e.target.value})}
